@@ -18,6 +18,7 @@
 body {
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .main-container {
@@ -565,6 +566,8 @@ main {
     background-image: url(./Images/pngwing\ 1.png);
     width: 260px;
     height: 360px;
+    background-size: 200px;
+    background-repeat: no-repeat;
 }
 
 .tenth-container::after {
@@ -572,10 +575,12 @@ main {
     display: block;
     position: absolute;
     top: -50%;
-    right: 0%;
+    right: -8%;
     background-image: url(./Images/pngwing\ 2.png);
     width: 260px;
     height: 360px;
+    background-size: 200px;
+    background-repeat: no-repeat;
 }
 
 .first-tenth-container-item {
