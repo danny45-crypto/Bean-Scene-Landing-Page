@@ -420,10 +420,33 @@ main {
 
 .seventh-container {
     margin-top: 30px;
-     background-image: url(./Images/coffee_blast.png), url('./Images/coffee_blast\ \(2\).png');
+    position: relative;
+}
+
+.seventh-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0%;
+    bottom: 40%;
+    top: -15%;
+    background-image: url(./Images/coffee_blast.png);
     background-repeat: no-repeat;
-    background-position: right top -30px, left;
-    background-size: 250px;
+    width: 350px;
+    height: 300px;
+    background-size: contain;
+}
+
+.seventh-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image:url('./Images/coffee_blast\ \(2\).png') ;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    background-size: contain;
+    top: 62%;
 }
 
 .mini-seventh-heading {
